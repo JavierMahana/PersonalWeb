@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Javier Mahana</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="Fonts/BrutalFont/stylesheet.css" type = "text/css">
+  <meta name="description" content="Descripcion de pana">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <nav>
+    <img onclick="scrollToTop()" class="home-nav" src="img/icon-home-empty.png" alt="home">
+    <ul>
+      <li><a onclick="goToAbout()">ABOUT</a></li>
+      <li><a onclick="goToPortfolio()">PROJECTS</a></li>
+      <li><a onclick="goToExperience()">EVENTS</a></li>
+    </ul>
+  </nav>
+  <section id="top" class="presentation">
+    <div class="video-container">
+      <video class="background-video" autoplay muted loop poster="img/thumbnail.png" playsinline>
+        <source src="Videos/PortfolioV6.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="flex-overlay">
+      <div class="big-spacer"></div>
+      <h1 class="name">
+        Javier Mahana
+      </h1>
+      <h2 class="main-role">
+        Video Game Developer
+      </h2>
+      <h2 class="sec-role">
+         Programmer & Director
+      </h2>
+      <button onclick="goToAbout()" class="more-info button" type="button">
+        More info
+      </button>
+      <img class="UE-logo" src="img/UE_Logo_horizontal_unreal-engine_white.svg" alt="Unreal Engine Logo" />
+    </div>
+  </section>
+
+  <section class="about-section">
+
+    <h1 id="about" class="about-header">About</h1>
+    <div class="about-intro">
+      <div class="about-image">
+        <img class="personal-photo" src="img/playa-sin-fondev2.png" alt="Photo of Javier" >
+      </div>
+      <div class="about-text">
+        <p class="description">
+          I'm a 24-year-old Chilean game developer<br> specialized in <span class="bold">Unreal Engine 5</span>.
+        </p>
+        <p class="description">
+          I was an exchange student in <span class="bold">germany</span><br> where I became a proficient gameplay <br>programmer in <span class="bold">C++ and Blueprints</span>.
+        </p>
+        <p class="description">
+          I have leadership experience as I was<br> the <span class="bold">director</span> of two game projects and <br>the <span class="bold">lead programmer</span> of another.
+        </p>
+        <p class="description">
+          Currently I'm trying to find people <br>interested working with me!
+        </p>
+      </div>
+
+    </div>
+    <div class="uppercase bold invitation">
+      Let's create something incredible together.
+    </div>
+    <div class="contact-buttons">
+      <button onclick="openWhatsapEN()" class="contact button" type="button">
+        Whatsapp me
+        <img class="icon inline-flex" src="img/whatsapp.png" alt="whatsapp icon">
+      </button>
+
+      <button onclick="openEmail()" class="contact button" type="button">
+        Email me
+        <img class="icon inline-flex" src="img/mail.png" alt="whatsapp icon">
+      </button>
+    </div>
+
+  </section>
+
+  <section class="project-section">
+    <h1 class="projects" id="portfolio">Current Projects</h1>
+
+    <article class="manoverboard-article">
+
+      <span class="bold game-tag-left">On Development</span>
+      <span class="bold game-tag-right">Looking for funding</span>
+
+      <div class="game-content">
+        <div class="manoverboard-sec1">
+          <img class="game-logo" src="img/ManOverboard-logo-small.png" alt="ManOverboard logo">
+          <span class="game-desc">A <span class="bold">Whacky</span> and <span class="bold">Chaotic</span> 4 player party game on where you control a under-qualified pirate squad. Can your crew survive and don't get <span class="bold">OverBoard</span>?</span>
+        </div>
+
+        <div class="manoverboard-sec2">
+          <div class="manoverboard roles-text">
+            <h2 class="role-title">My Roles</h2>
+            <h3 class="bold">Lead Programmer</h3>
+            <h3>Game Designer</h3>
+          </div>
+          <img class="game-img" src="img/ManOverboard-characters.png" alt="ManOverboard logo">
+        </div>
+        <iframe width="100%" height="375"
+                src="https://www.youtube.com/embed/UIIJV_0MyCQ">
+        </iframe>
+      </div>
+    </article>
+
+
+    <article class="borrowed-wings-article">
+
+      <span class="bold game-tag-left">On Development</span>
+      <span class="bold game-tag-right">Looking for funding</span>
+
+      <div class="game-content">
+
+        <div class="borrowed-wings-sec1">
+          <img class="game-logo borrowed-wings" src="img/BorroweWings-logo-small.png" alt="Borrowed Wings logo">
+          <span class="game-desc">A <span class="bold">wholesome</span> open-world game where you explore different islands and help local villages using your <span class="bold">airplane</span> flight abilities.</span>
+        </div>
+
+        <div class="borrowed-wings-sec2">
+          <div class="manoverboard roles-text">
+            <h2 class="role-title">My Roles</h2>
+            <h3 class="bold">Director</h3>
+            <h3>Technical Artist</h3>
+          </div>
+          <img class="game-img" src="img/BorrowedWings-plane-small.png" alt="Airplane with character and chicken">
+        </div>
+
+        <iframe width="100%" height="375"
+                src="https://www.youtube.com/embed/ZAhuBuNjiVo">
+        </iframe>
+      </div>
+    </article>
+
+
+
+
+    <h2 class="other-games">Play these and my other games here <a href="https://j-mahana.itch.io/" target="_blank"><img src="img/itch-icon-small.png" alt="Itch logo" width="128" height="128"></a></h2>
+
+  </section>
+
+  <div class="industry-separator"></div>
+
+  <section class="industry-experience">
+    <h1 class="industry-h" id="experience">Events</h1>
+
+    <div class="flex-multiline">
+      <div class="festigame">
+        <img class="festigame-logo" src="img/Festigame-logo.png" alt="Festigame logo">
+        <p class="bold festigame-text">Santiago's massive Chilean videogame Festival</p>
+        <img class="festigame-img" src="img/festigame-2023.jpg" alt="Photo of my Festigame 2023 stand">
+
+      </div>
+
+      <div class="massif">
+        <img class="massif-logo" src="img/massif-logo.png" alt="Massif logo">
+        <p class="bold massif-text">2024 Frankfurt's developer oriented videogame convention.</p>
+        <img class="massif-img" src="img/web-massif.png" alt="Photo of Frankfurt's 2024 Massif Convention">
+
+      </div>
+    </div>
+
+
+    <h2 class="industry-conclusion bold">These Festivals had been key for making connections within the industry</h2>
+  </section>
+  <footer>
+    <h1>Want to follow my game development journey?</h1>
+    <p>I'm active in my socials!</p>
+    <div>
+      <a target="_blank" href="https://www.instagram.com/javier_gamedev/"><img class="insta-icon" src="img/instaw.png" alt="instagram link"></a>
+      <a target="_blank" href="https://www.linkedin.com/in/javier-mahana-palomer-664389248/"><img class="linkedin-icon" src="img/LinkedIn_icon.png" alt="linkedin link"></a>
+    </div>
+    <button onclick="scrollToTop()" class="contact button" type="button">
+      Back to the start
+      <img class="icon inline-flex" src="img/icon-home-full.png" alt="whatsapp icon">
+    </button>
+    <p class="small-text end-page">Javier Mahana 2024. Webpage made and designed by myself</p>
+  </footer>
+</body>
+
+<script>
+
+  function openEmail() {
+    window.open('mailto:javiermahana@hotmail.com', '_blank');
+  }
+
+  function openWhatsapEN(){
+    window.open('https://wa.me/56959392584?text=I\'m%20interested%20in%20working%20with%20you','_blank');
+  }
+
+  function goToAbout() {
+    var aboutSection = document.getElementById('about');
+    if (aboutSection) {
+
+      var targetPosition = aboutSection.getBoundingClientRect().top + window.scrollY - 50; // Calculate the target position
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth' // Optional: Add smooth scrolling behavior
+      });
+    }
+  }
+  function goToPortfolio() {
+    var portfolioSection = document.getElementById('portfolio');
+    if (portfolioSection) {
+
+      var targetPosition = portfolioSection.getBoundingClientRect().top + window.scrollY - 50; // Calculate the target position
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth' // Optional: Add smooth scrolling behavior
+      });
+    }
+  }
+  function goToExperience() {
+    var portfolioSection = document.getElementById('experience');
+    if (portfolioSection) {
+
+      var targetPosition = portfolioSection.getBoundingClientRect().top + window.scrollY - 50; // Calculate the target position
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth' // Optional: Add smooth scrolling behavior
+      });
+    }
+  }
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Smooth scrolling behavior
+    });
+  }
+</script>
+
+</html>
