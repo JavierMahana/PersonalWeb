@@ -872,9 +872,11 @@ iframe{
 
   .festigame-logo{
     max-width: 370px;
+    min-height: 170px;
   }
   .massif-logo{
     max-width: 370px;
+    min-height: 170px;
   }
 
 }
@@ -910,6 +912,11 @@ iframe{
 
   .festigame-logo{
     width: 340px;
+    min-height: 156px;
+  }
+  .massif-logo{
+    width: 340px;
+    min-height: 156px;
   }
 }
 
