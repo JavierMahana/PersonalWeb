@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="Fonts/BrutalFont/stylesheet.css" type = "text/css">
   <meta name="description" content="Javier Mahana is a video game developer specializing in Unreal Engine 5. Explore his portfolio, current projects, and industry experience.">
-  <meta name="keywords" content="Javier Mahana, game developer, Unreal Engine 5, UE5, video game programming, game director, game portfolio">
+  <meta name="keywords" content="Javier Mahana, game developer, Unreal Engine 5, UE5, video game programming, game director, game portfolio, C++, blueprints, indie developer">
   <meta name="author" content="Javier Mahana">
 
   <!-- Open Graph meta tags -->
@@ -30,7 +30,9 @@
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="/icon.png">
   <link rel="apple-touch-icon" href="icon.png">
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,179 +43,221 @@
 </head>
 
 <body>
-  <nav>
-    <img onclick="scrollToTop()" class="home-nav" src="img/icon-home-empty.png" alt="home">
-    <ul>
-      <li><a onclick="goToAbout()">ABOUT</a></li>
-      <li><a onclick="goToPortfolio()">PROJECTS</a></li>
-      <li><a onclick="goToExperience()">EVENTS</a></li>
-    </ul>
-  </nav>
-  <section id="top" class="presentation">
-    <div class="video-container">
-      <video class="background-video" autoplay muted loop poster="img/thumbnail.png" playsinline>
-        <source src="Videos/PortfolioV6.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="flex-overlay">
-      <div class="big-spacer"></div>
-      <h1 class="name">
-        Javier Mahana
-      </h1>
-      <h2 class="main-role">
-        Video Game Developer
-      </h2>
-      <h2 class="sec-role">
-         Programmer & Director
-      </h2>
-      <button onclick="goToAbout()" class="more-info button" type="button">
-        Click here
-      </button>
-      <img class="UE-logo" src="img/UE_Logo_horizontal_unreal-engine_white.svg" alt="Unreal Engine Logo" />
-    </div>
-  </section>
+<nav>
+  <img onclick="scrollToTop()" class="home-nav" src="img/icon-home-empty.png" alt="home">
+  <ul class="hide-small">
+    <li class="en"><a onclick="goToAbout()">ABOUT</a></li>
+    <li class="en"><a onclick="goToPortfolio()">PROJECTS</a></li>
+    <li class="en"><a onclick="goToExperience()">EVENTS</a></li>
+    <li class="es hidden" lang="es"><a onclick="goToAbout()">ACERCA</a></li>
+    <li class="es hidden" lang="es"><a onclick="goToPortfolio()">PROYECTOS</a></li>
+    <li class="es hidden" lang="es"><a onclick="goToExperience()">EVENTOS</a></li>
+  </ul>
 
-  <section class="about-section">
+  <div class="language-toggle">
+    <button onclick="setLanguage('en')" class="button lang-button" id="en-button">English</button>
+    <button onclick="setLanguage('es')" class="button lang-button" id="es-button">Español</button>
+  </div>
+</nav>
 
-    <h1 id="about" class="about-header">About</h1>
+<section id="top" class="presentation">
+  <div class="video-container">
+    <video class="background-video" autoplay muted loop poster="img/thumbnail.png" playsinline>
+      <source src="Videos/PortfolioV6.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="flex-overlay">
+    <div class="big-spacer"></div>
+    <h1 class="name">Javier Mahana</h1>
+    <h2 class="en main-role">Video Game Developer</h2>
+    <h2 class="es hidden main-role" lang="es">Desarrollador de Videojuegos</h2>
+    <h2 class="en sec-role">Programmer & Director</h2>
+    <h2 class="es hidden sec-role" lang="es">Programador Y Director</h2>
+    <button onclick="goToAbout()" class="en more-info button" type="button">
+      <span class="hide-medium">Learn More </span>About Me
+    </button>
+    <button onclick="goToAbout()" class="es hidden more-info button" type="button" lang="es">
+      <span class="hide-medium">Conoce Más </span>Sobre Mí
+    </button>
+
+    <img class="UE-logo" src="img/UE_Logo_horizontal_unreal-engine_white.svg" alt="Unreal Engine Logo" />
+  </div>
+</section>
+
+<section id="about" class="about-section">
+  <h1 class="about-header en">About</h1>
+  <h1 class="about-header es hidden" lang="es">Acerca de</h1>
+  <div class="about-main">
     <div class="about-intro">
       <div class="about-image">
-        <img class="personal-photo" src="img/playa-sin-fondev2.png" alt="Photo of Javier" >
+        <img class="personal-photo" src="img/playa-sin-fondev2.png" alt="Photo of Javier">
       </div>
       <div class="about-text">
-        <p class="description">
+        <p class="description en">
           I'm a 24-year-old Chilean game developer<br> specialized in <span class="bold">Unreal Engine 5</span>.
         </p>
-        <p class="description">
-          I was an exchange student in <span class="bold">germany</span><br> where I became a proficient gameplay <br>programmer in <span class="bold">C++ and Blueprints</span>.
+        <p class="description es hidden" lang="es">
+          Soy un desarrollador chileno de 24 años<br> especializado en <span class="bold">Unreal Engine 5</span>.
         </p>
-        <p class="description">
+        <p class="description en">
+          I was an exchange student in <span class="bold">Germany</span><br> where I became a proficient gameplay <br>programmer in <span class="bold">C++ and Blueprints</span>.
+        </p>
+        <p class="description es hidden" lang="es">
+          Fui estudiante de intercambio en <span class="bold">Alemania</span><br> donde me convertí en un programador<br> experimentado en <span class="bold">C++ y Blueprints</span>.
+        </p>
+        <p class="description en">
           I have leadership experience as I was<br> the <span class="bold">director</span> of two game projects and <br>the <span class="bold">lead programmer</span> of another.
         </p>
-        <p class="description">
+        <p class="description es hidden" lang="es">
+          Tengo experiencia en liderazgo ya que fui<br> el <span class="bold">director</span> de dos proyectos de juegos y<br> el <span class="bold">programador principal</span> de otro.
+        </p>
+        <p class="description en">
           Currently I'm trying to find people <br>interested working with me!
         </p>
-      </div>
-
-    </div>
-    <div class="uppercase bold invitation">
-      Let's create something incredible together.
-    </div>
-    <div class="contact-buttons">
-      <button onclick="openWhatsapEN()" class="contact button" type="button">
-        Whatsapp me
-        <img class="icon inline-flex" src="img/whatsapp.png" alt="whatsapp icon">
-      </button>
-
-      <button onclick="openEmail()" class="contact button" type="button">
-        Email me
-        <img class="icon inline-flex" src="img/mail.png" alt="whatsapp icon">
-      </button>
-    </div>
-
-  </section>
-
-  <section class="project-section">
-    <h1 class="projects" id="portfolio">Current Projects</h1>
-
-    <article class="manoverboard-article">
-
-      <span class="bold game-tag-left">On Development</span>
-      <span class="bold game-tag-right">Looking for funding</span>
-
-      <div class="game-content">
-        <div class="manoverboard-sec1">
-          <img class="game-logo" src="img/ManOverboard-logo-small.png" alt="ManOverboard logo">
-          <span class="game-desc">A <span class="bold">Whacky</span> and <span class="bold">Chaotic</span> 4 player party game on where you control a under-qualified pirate squad. Can your crew survive and don't get <span class="bold">OverBoard</span>?</span>
-        </div>
-
-        <div class="manoverboard-sec2">
-          <div class="manoverboard roles-text">
-            <h2 class="role-title">My Roles</h2>
-            <h3 class="bold">Lead Programmer</h3>
-            <h3>Game Designer</h3>
-          </div>
-          <img class="game-img" src="img/ManOverboard-characters.png" alt="ManOverboard logo">
-        </div>
-        <iframe width="100%" height="375"
-                src="https://www.youtube.com/embed/UIIJV_0MyCQ">
-        </iframe>
-      </div>
-    </article>
-
-
-    <article class="borrowed-wings-article">
-
-      <span class="bold game-tag-left">On Development</span>
-      <span class="bold game-tag-right">Looking for funding</span>
-
-      <div class="game-content">
-
-        <div class="borrowed-wings-sec1">
-          <img class="game-logo borrowed-wings" src="img/BorroweWings-logo-small.png" alt="Borrowed Wings logo">
-          <span class="game-desc">A <span class="bold">wholesome</span> open-world game where you explore different islands and help local villages using your <span class="bold">airplane</span> flight abilities.</span>
-        </div>
-
-        <div class="borrowed-wings-sec2">
-          <div class="manoverboard roles-text">
-            <h2 class="role-title">My Roles</h2>
-            <h3 class="bold">Director</h3>
-            <h3>Technical Artist</h3>
-          </div>
-          <img class="game-img" src="img/BorrowedWings-plane-small.png" alt="Airplane with character and chicken">
-        </div>
-
-        <iframe width="100%" height="375"
-                src="https://www.youtube.com/embed/ZAhuBuNjiVo">
-        </iframe>
-      </div>
-    </article>
-
-
-
-
-    <h2 class="other-games">Play these and my other games here <a href="https://j-mahana.itch.io/" target="_blank"><img src="img/itch-icon-small.png" alt="Itch logo" width="128" height="128"></a></h2>
-
-  </section>
-
-  <div class="industry-separator"></div>
-
-  <section class="industry-experience">
-    <h1 class="industry-h" id="experience">Events</h1>
-
-    <div class="flex-multiline">
-      <div class="festigame">
-        <img class="festigame-logo" src="img/Festigame-logo.png" alt="Festigame logo">
-        <p class="bold festigame-text">Santiago's massive Chilean videogame Festival</p>
-        <img class="festigame-img" src="img/festigame-2023.jpg" alt="Photo of my Festigame 2023 stand">
-
-      </div>
-
-      <div class="massif">
-        <img class="massif-logo" src="img/massif-logo.png" alt="Massif logo">
-        <p class="bold massif-text">2024 Frankfurt's developer oriented videogame convention.</p>
-        <img class="massif-img" src="img/web-massif.png" alt="Photo of Frankfurt's 2024 Massif Convention">
-
+        <p class="description es hidden" lang="es">
+          ¡Actualmente estoy buscando personas<br> interesadas en trabajar conmigo!
+        </p>
       </div>
     </div>
+    <img class="chile hide-medium" src="img/silhouette-chile.svg" height="400px" alt="Chile image">
+  </div>
 
-
-    <h2 class="industry-conclusion bold">These Festivals had been key for making connections within the industry</h2>
-  </section>
-  <footer>
-    <h1>Want to follow my game development journey?</h1>
-    <p>I'm active in my socials!</p>
-    <div>
-      <a target="_blank" href="https://www.instagram.com/javier_gamedev/"><img class="insta-icon" src="img/instaw.png" alt="instagram link"></a>
-      <a target="_blank" href="https://www.linkedin.com/in/javier-mahana-palomer-664389248/"><img class="linkedin-icon" src="img/LinkedIn_icon.png" alt="linkedin link"></a>
-    </div>
-    <button onclick="scrollToTop()" class="contact button" type="button">
-      Back to the start
-      <img class="icon inline-flex" src="img/icon-home-full.png" alt="whatsapp icon">
+  <div class="uppercase bold invitation en">
+    Do you have a project idea? <br>Let's create something incredible together.
+  </div>
+  <div class="uppercase bold invitation es hidden" lang="es">
+    ¿Tienes una idea de proyecto? <br>Hagamos algo increíble juntos.
+  </div>
+  <div class="contact-buttons">
+    <button onclick="openWhatsapEN()" class="contact button en" type="button">
+      Whatsapp me
+      <img class="icon inline-flex" src="img/whatsapp.png" alt="whatsapp icon">
     </button>
-    <p class="small-text end-page">Javier Mahana 2024. Webpage made and designed by myself</p>
-  </footer>
+    <button onclick="openWhatsapES()" class="contact button es hidden" type="button" lang="es">
+      Escríbeme al Whatsapp
+      <img class="icon inline-flex" src="img/whatsapp.png" alt="whatsapp icon">
+    </button>
+
+    <button onclick="openEmail()" class="en contact button" type="button">
+      Email me
+      <img class="icon inline-flex" src="img/mail.png" alt="email icon">
+    </button>
+    <button onclick="openEmail()" class="es hidden contact button" type="button" lang="es">
+      Email
+      <img class="icon inline-flex" src="img/mail.png" alt="email icon">
+    </button>
+  </div>
+</section>
+
+<section id="portfolio" class="project-section">
+  <h1 class="projects en">Current Projects</h1>
+  <h1 class="projects es hidden" lang="es">Proyectos Actuales</h1>
+
+  <article class="manoverboard-article">
+    <span class="bold game-tag-left en">On Development</span>
+    <span class="bold game-tag-left es hidden" lang="es">En Desarrollo</span>
+    <span class="bold game-tag-right en">Looking for funding</span>
+    <span class="bold game-tag-right es hidden" lang="es">Buscando financiamiento</span>
+
+    <div class="game-content">
+      <div class="manoverboard-sec1">
+        <img class="game-logo" src="img/ManOverboard-logo-small.png" alt="ManOverboard logo">
+        <span class="game-desc en">A <span class="bold">Whacky</span> and <span class="bold">Chaotic</span> 4 player party game on where you control a under-qualified pirate squad. Can your crew survive and don't get <span class="bold">OverBoard</span>?</span>
+        <span class="game-desc es hidden" lang="es">Un juego de fiesta para 4 jugadores, <span class="bold">alocado</span> y <span class="bold">caótico</span> donde controlas un escuadrón pirata no calificado. ¿Puede tu tripulación sobrevivir y no caer <span class="bold">por la borda</span>?</span>
+      </div>
+
+      <div class="manoverboard-sec2">
+        <div class="manoverboard roles-text">
+          <h2 class="role-title en">My Roles</h2>
+          <h2 class="role-title es hidden" lang="es">Mis Roles</h2>
+          <h3 class="bold en">Lead Programmer</h3>
+          <h3 class="bold es hidden" lang="es">Programador Principal</h3>
+          <h3 class="en">Game Designer</h3>
+          <h3 class="es hidden" lang="es">Diseñador de Juegos</h3>
+        </div>
+        <img class="game-img" src="img/ManOverboard-characters.png" alt="ManOverboard logo">
+      </div>
+      <iframe width="100%" height="375" src="https://www.youtube.com/embed/UIIJV_0MyCQ"></iframe>
+    </div>
+  </article>
+
+  <article class="borrowed-wings-article">
+    <span class="bold game-tag-left en">On Development</span>
+    <span class="bold game-tag-left es hidden" lang="es">En Desarrollo</span>
+    <span class="bold game-tag-right en">Looking for funding</span>
+    <span class="bold game-tag-right es hidden" lang="es">Buscando financiamiento</span>
+
+    <div class="game-content">
+      <div class="borrowed-wings-sec1">
+        <img class="game-logo borrowed-wings" src="img/BorroweWings-logo-small.png" alt="Borrowed Wings logo">
+        <span class="game-desc en">A <span class="bold">wholesome</span> open-world game where you explore different islands and help local villages using your <span class="bold">airplane</span> flight abilities.</span>
+        <span class="game-desc es hidden" lang="es">Un juego de mundo abierto <span class="bold">reconfortante</span> donde exploras diferentes islas y ayudas a las aldeas locales usando tus habilidades de vuelo en <span class="bold">avión</span>.</span>
+      </div>
+
+      <div class="borrowed-wings-sec2">
+        <div class="manoverboard roles-text">
+          <h2 class="role-title en">My Roles</h2>
+          <h2 class="role-title es hidden" lang="es">Mis Roles</h2>
+          <h3 class="bold en">Director</h3>
+          <h3 class="bold es hidden" lang="es">Director</h3>
+          <h3 class="en">Technical Artist</h3>
+          <h3 class="es hidden" lang="es">Artista Técnico</h3>
+        </div>
+        <img class="game-img" src="img/BorrowedWings-plane-small.png" alt="Airplane with character and chicken">
+      </div>
+      <iframe width="100%" height="375" src="https://www.youtube.com/embed/ZAhuBuNjiVo"></iframe>
+    </div>
+  </article>
+
+  <h2 class="other-games en">Play these and my other games here <a href="https://j-mahana.itch.io/" target="_blank"><img src="img/itch-icon-small.png" alt="Itch logo" width="128" height="128"></a></h2>
+  <h2 class="other-games es hidden" lang="es">Juega estos y mis otros juegos aquí <a href="https://j-mahana.itch.io/" target="_blank"><img src="img/itch-icon-small.png" alt="Logotipo de Itch" width="128" height="128"></a></h2>
+</section>
+
+<div class="industry-separator"></div>
+
+<section class="industry-experience" id="experience">
+  <h1 class="industry-h en">Events</h1>
+  <h1 class="industry-h es hidden" lang="es">Eventos</h1>
+
+  <div class="flex-multiline">
+    <div class="massif">
+      <img class="massif-logo" src="img/massif-logo.png" alt="Massif logo">
+      <p class="bold massif-text en">2024 Frankfurt's developer oriented video-game convention.</p>
+      <p class="bold massif-text es hidden" lang="es">Convención de videojuegos de 2024 orientada a desarrolladores en Frankfurt.</p>
+      <img class="massif-img" src="img/web-massif.png" alt="Photo of Frankfurt's 2024 Massif Convention">
+    </div>
+
+    <div class="festigame">
+      <img class="festigame-logo" src="img/Festigame-logo.png" alt="Festigame logo">
+      <p class="bold festigame-text en">Santiago's massive Chilean videogame Festival</p>
+      <p class="bold festigame-text es hidden" lang="es">Festival de videojuegos masivo en Santiago, Chile</p>
+      <img class="festigame-img" src="img/festigame-2023.jpg" alt="Photo of my Festigame 2023 stand">
+    </div>
+  </div>
+
+  <h2 class="industry-conclusion bold en">These Festivals had been key for making connections within the industry</h2>
+  <h2 class="industry-conclusion bold es hidden" lang="es">Estos festivales han sido clave para hacer conexiones en la industria</h2>
+</section>
+
+<footer>
+  <h1 class="en">Want to follow my game development journey?</h1>
+  <h1 class="es hidden" lang="es">¿Quieres seguir mi viaje en el desarrollo de juegos?</h1>
+  <p class="en">I'm active in my socials!</p>
+  <p class="es hidden" lang="es">¡Estoy activo en mis redes sociales!</p>
+  <div>
+    <a target="_blank" href="https://www.instagram.com/javier_gamedev/"><img class="insta-icon" src="img/instaw.png" alt="instagram link"></a>
+    <a target="_blank" href="https://www.linkedin.com/in/javier-mahana-palomer-664389248/"><img class="linkedin-icon" src="img/LinkedIn_icon.png" alt="linkedin link"></a>
+  </div>
+  <button onclick="scrollToTop()" class="contact button" type="button">
+    <span class="en">Back to the start</span>
+    <span class="es hidden" lang="es">Volver al inicio</span>
+    <img class="icon inline-flex" src="img/icon-home-full.png" alt="whatsapp icon">
+  </button>
+  <p class="small-text end-page en">Javier Mahana 2024. Webpage made and designed by myself</p>
+  <p class="small-text end-page es hidden" lang="es">Javier Mahana 2024. Página web hecha y diseñada por mí mismo</p>
+</footer>
 </body>
+
 
 <script>
 
@@ -223,6 +267,9 @@
 
   function openWhatsapEN(){
     window.open('https://wa.me/56959392584?text=I\'m%20interested%20in%20working%20with%20you','_blank');
+  }
+  function openWhatsapES(){
+    window.open('https://wa.me/56959392584?text=Estoy%20interesado%20en%20trabajar%20contigo','_blank');
   }
 
   function goToAbout() {
@@ -264,6 +311,24 @@
       behavior: 'smooth' // Smooth scrolling behavior
     });
   }
+
+  function setLanguage(language) {
+    var englishElements = document.querySelectorAll('.en');
+    var spanishElements = document.querySelectorAll('.es');
+
+    if (language === 'en') {
+      englishElements.forEach(el => el.classList.remove('hidden'));
+      spanishElements.forEach(el => el.classList.add('hidden'));
+    } else if (language === 'es') {
+      englishElements.forEach(el => el.classList.add('hidden'));
+      spanishElements.forEach(el => el.classList.remove('hidden'));
+    }
+
+    // Update button styles to indicate selected language
+    document.getElementById('en-button').classList.toggle('selected', language === 'en');
+    document.getElementById('es-button').classList.toggle('selected', language === 'es');
+  }
+
 </script>
 
 </html>

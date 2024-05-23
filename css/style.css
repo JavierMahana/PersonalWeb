@@ -314,6 +314,8 @@ p{
   font-weight: 400;
 }
 
+
+
 .button {
   border: none;
   color: aliceblue;
@@ -328,6 +330,29 @@ p{
   transition-duration: 0.2s;
 }
 
+.lang-button {
+  color: #767b80;
+  background-color: #020024;
+  margin: 0;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.lang-button.selected {
+
+  background-color: #007BFF;
+  color: aliceblue;
+}
+
+.lang-button.selected:hover {
+
+  background-color: #005bbd;
+  color: aliceblue;
+}
+
+.lang-button:hover{
+  color: aliceblue;
+}
 
 .more-info:hover{
   width: calc(20% + 10px);
@@ -363,6 +388,7 @@ p{
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   background-color: #020024;
 
@@ -384,8 +410,7 @@ nav {
   margin-top: 6px;
 }
 .home-nav:hover{
-  filter: invert(0%);
-  background-color: #C1FF3b;
+  background-color: #ffa442;
   color: #1e3336;
   cursor: pointer;
 }
@@ -410,8 +435,8 @@ nav > ul > li {
 }
 
 nav > ul > li:hover {
-  background-color: #C1FF3b;
-  color: #1e3336;
+  background-color: #005bbd ;
+  color: white;
   cursor: pointer;
 }
 
@@ -466,6 +491,11 @@ li > a {
   border-radius: 50px;
   color: aliceblue;
   flex-grow: 1;
+}
+
+.about-main{
+  display: flex;
+  align-items: center;
 }
 
 .description{
@@ -550,11 +580,11 @@ my work
 
   width: 100%;
   height: 10px;
-  background-color: #4657f4;
+  background-color: #020024;
 }
 
 .industry-experience{
-  background: linear-gradient(#3ba7ff, rgba(59, 228, 250, 0.98));
+  background: linear-gradient(#84ecff, #56abff);
 }
 
 .flex-multiline{
@@ -570,11 +600,18 @@ my work
   text-align: center;
 }
 
+.chile{
+  flex-shrink: 1;
+  margin: 0 -150px 0 -100px;
+}
+
 .festigame-logo{
   max-width: 500px;
+  min-height: 230px;
 }
 .massif-logo{
   max-width: 500px;
+  min-height: 230px;
 }
 
 
@@ -809,7 +846,13 @@ iframe{
 
 }
 
+
+
+
 @media only screen and (max-width: 600px) {
+
+
+
   html {
     font-size: 0.9em;
   }
@@ -834,6 +877,40 @@ iframe{
     max-width: 370px;
   }
 
+}
+
+@media only screen and (max-width: 535px) {
+  .hide-medium{
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 455px) {
+  nav ul{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 410px){
+
+  .hide-small{
+    display: none;
+  }
+
+
+
+  .game-logo{
+    width: 350px;
+  }
+  .game-desc{
+    max-width: 330px;
+    min-width: 330px;
+  }
+
+  .festigame-logo{
+    width: 340px;
+  }
 }
 
 /* For landscape, we want the toolbar stick on the left */
