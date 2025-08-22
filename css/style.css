@@ -451,7 +451,7 @@ li > a {
   justify-content: space-between;
   align-items: center;
   min-height: 90vh;
-  background: linear-gradient(#020024, #2a7abc);
+  background: linear-gradient(#020024, #0e0b45);
   padding-bottom: 47px;
 }
 
@@ -462,18 +462,22 @@ li > a {
 }
 
 .personal-photo{
-  max-height: 400px;
+  max-height: 450px;
+  margin-bottom: 0;
+  padding-bottom: -20px;
+  border-radius: 50px;
 }
 
-.about-intro{
-  padding: 10px 5px 0 5px;
-  border: 2px solid #020024;
-  border-radius: 10px;
-  background: linear-gradient(#3BA7FF33, #020024);
+.about-main{
+  width: 100%;
+  background: #3BA7FF33;
   display: flex;
   align-items: center;
   align-content: end;
+     /* centra verticalmente */
+  justify-content: center;  /* centra horizontalmente */
 }
+
 
 .about-image{
   flex-shrink: 1;
@@ -485,17 +489,11 @@ li > a {
   flex-direction: column;
   justify-content: space-around;
   padding: 5px 20px;
-  margin-left: -40px;
+  margin-right: -40px;
   min-height: 400px;
   max-height: 600px;
   border-radius: 50px;
   color: aliceblue;
-  flex-grow: 1;
-}
-
-.about-main{
-  display: flex;
-  align-items: center;
 }
 
 .description{
@@ -595,14 +593,9 @@ my work
   align-items: center;
   gap: 50px 16px;
   max-width: 1400px;
-  margin: 0;
+  margin: 0 auto;
   padding: 20px 10px;
   text-align: center;
-}
-
-.chile{
-  flex-shrink: 1;
-  margin: 0 -150px 0 -100px;
 }
 
 .festigame-logo{
@@ -900,14 +893,18 @@ iframe{
     display: none;
   }
 
-
-
   .game-logo{
     width: 350px;
   }
+
+
   .game-desc{
     max-width: 330px;
     min-width: 330px;
+  }
+
+  .game-logo-ts2{
+    max-width: 330px;
   }
 
   .festigame-logo{
@@ -919,6 +916,44 @@ iframe{
     min-height: 156px;
   }
 }
+
+
+/* Contenedor principal: imagen + texto al lado */
+.tormentedsouls2-sec1 {
+  display: flex;
+  flex-wrap: wrap; /* en pantallas chicas se apilan */
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+/* Imagen (columna izquierda) */
+.game-logo-ts2 {
+  max-width: 100%;
+  height: auto;
+  width: 350px;
+  border-radius: 8px;
+}
+
+/* Texto y roles (columna derecha) */
+.ts2-next-to-Image {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Descripción */
+.game-desc {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Roles */
+.roles-text {
+  margin-top: 10px;
+}
+
 
 /* For landscape, we want the toolbar stick on the left */
 
