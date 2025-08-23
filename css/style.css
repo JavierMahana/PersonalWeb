@@ -1,6 +1,6 @@
 
 html {
-  color: #222;
+  color: #101010;
   font-size: 1em;
   line-height: 1.4;
 }
@@ -377,13 +377,22 @@ p{
   min-height: 15vh;
 }
 
-.projects{
+.projects {
   background-color: #3BA7FF;
-  border-bottom: 2px solid #1e3336;
-  border-top: 3px solid #1e3336;
+  border-bottom: 3px solid #050808;
+  border-top: 3px solid #050808;
   margin-top: 0;
   padding-bottom: 5px;
 }
+
+.projects {
+  background-color: #3BA7FF;
+  border-bottom: 3px solid #050808;
+  border-top: 3px solid #050808;
+  margin-top: 0;
+  padding-bottom: 5px;
+}
+
 
 nav {
   display: flex;
@@ -569,10 +578,12 @@ my work
 */
 
 .industry-h{
+  background-color: #3BA7FF;
+  border-bottom: 3px solid #050808;
   margin-top: 0;
-  padding-top: 20px;
-  text-align: center;
+  padding-bottom: 5px;
 }
+
 
 .industry-separator{
 
@@ -582,7 +593,7 @@ my work
 }
 
 .industry-experience{
-  background: linear-gradient(#84ecff, #56abff);
+  background: linear-gradient(#102357, #0e0b44);
 }
 
 .flex-multiline{
@@ -605,6 +616,7 @@ my work
 .massif-logo{
   max-width: 500px;
   min-height: 230px;
+  border-radius: 10px;
 }
 
 
@@ -632,18 +644,21 @@ my work
 
 .festigame-text{
   text-align: center;
+  color:white;
 }
 
 .massif-text{
   text-align: center;
+  color:white;
 }
 .industry-conclusion{
   font-size: 16px;
   text-align: center;
   padding: 30px 20px;
   border-radius: 10px;
-  background-color: #6e7aeb;
+  background-color: #020024;
   margin: 0 auto 0;
+  color: white;
 }
 
 
@@ -802,7 +817,11 @@ iframe{
 }
 
 .project-section{
-  background: linear-gradient(#2a7abc, #020024, #6F7BED);
+  background: linear-gradient(#184a73, #020024, #363d83);
+}
+
+.manoverboard-article {
+  margin-top: 40px;
 }
 
 .borrowed-wings-article{
