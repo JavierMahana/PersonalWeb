@@ -714,11 +714,12 @@ footer h1{
 }
 
 .game-content{
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: space-around;
+  align-content: center;
   align-items: center;
   gap: 40px;
 }
@@ -914,6 +915,7 @@ iframe{
 
   .game-logo{
     width: 350px;
+    max-width: 100%;
   }
 
 
