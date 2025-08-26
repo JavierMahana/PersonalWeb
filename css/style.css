@@ -464,7 +464,7 @@ li > a {
   justify-content: space-between;
   align-items: center;
   min-height: 90vh;
-  background: linear-gradient(#020024, #0e0b45);
+  background: linear-gradient(#020024, #3a0b45);
   padding-bottom: 47px;
 }
 
@@ -676,7 +676,7 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#1e3336,#25281D);
+  background: linear-gradient(#1e3336, #000000);
   padding-bottom: 32px;
   color: aliceblue;
   text-align: center;
@@ -696,7 +696,7 @@ footer button{
   margin-top: 25px;
 }
 
-footer h1{
+footer h2{
   margin-bottom: 0;
   margin-top: 50px;
   font-size: 26px;
@@ -826,7 +826,7 @@ iframe{
 }
 
 .project-section{
-  background: linear-gradient(#184a73, #020024, #363d83);
+  background: linear-gradient(#731818, #020024, #363d83);
 }
 
 .manoverboard-article {
