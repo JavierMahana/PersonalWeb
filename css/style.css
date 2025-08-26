@@ -324,7 +324,7 @@ p{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  background-color: #ff923b;
+  background-color: #ff923bcc;
   font-weight: bold;
   text-transform: uppercase;
   transition-duration: 0.2s;
@@ -377,21 +377,25 @@ p{
   min-height: 15vh;
 }
 
-.projects {
-  background-color: #3BA7FF;
-  border-bottom: 3px solid #050808;
-  border-top: 3px solid #050808;
-  margin-top: 0;
-  padding-bottom: 5px;
+
+
+.sectionTitle
+{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .projects {
-  background-color: #3BA7FF;
-  border-bottom: 3px solid #050808;
-  border-top: 3px solid #050808;
-  margin-top: 0;
+  color: #050808;
+  background-color: #ff923b;
+  border-radius: 10px;
+  width: 400px;
+  border: 3px solid #050808;
+  margin: auto;
   padding-bottom: 5px;
+  justify-content: center;
 }
+
 
 
 nav {
@@ -562,6 +566,7 @@ li > a {
 }
 
 .contact:hover{
+  background-color: #ff923b;
   font-size: 14px;
 }
 
@@ -578,10 +583,13 @@ my work
 */
 
 .industry-h{
-  background-color: #3BA7FF;
-  border-bottom: 3px solid #050808;
-  margin-top: 0;
+  background-color: #ffffff;
+  border: 3px solid #050808;
   padding-bottom: 5px;
+
+  border-radius: 10px;
+  width: 400px;
+  margin: auto;
 }
 
 
@@ -761,9 +769,9 @@ footer h1{
   justify-content: center;
   margin-bottom: 15px;
   padding: 10px;
-  background: linear-gradient(#bf6e2d, #433E2D);
-  border-radius: 5px;
-  border: 3px solid #25281D;
+  background: linear-gradient(#bf6e2d, #bf6e2d);
+  border-radius: 15px;
+  border: 3px solid #101010;
   color: aliceblue;
 }
 
